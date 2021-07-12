@@ -100,7 +100,7 @@ function App() {
   }
 
   function handleClearTodos(){
-    const newTodos = todos.filter(todo=>todo.complete)
+    const newTodos = todos.filter(todo=>!todo.complete)
     setTodos(newTodos)
   }
   return(
